@@ -17,14 +17,13 @@ const theme = {
 const Button = styled.button`
   background-color: ${(props) => theme[props.theme].default};
   color: white;
-  font: 20px, Verdana;
-  //padding: 20px 500px;
-  width: 900px;
-  height: 80px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 400px;
+  height: 60px;
   border-radius: 20px;
   outline: 0;
   border: 0; 
-  //text-transform: uppercase;
   margin: 10px 0px;
   cursor: pointer;
   box-shadow: 0px 2px 2px lightgray;
@@ -43,13 +42,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <div class="thought"> Hi, I'm Germey! Welcome to my lab</div>
-        <Button theme="pink">
-          Click here if you're a parent/guardian!
-        </Button>
-        <Button theme="blue">
-          Click here if you're a kid!
-        </Button>
+        <p class="bubble speech">
+          Hi, I'm Germey! Welcome to my lab!
+          <br /> Are you a...
+          <Button theme="pink"> 
+           ...parent/guardian?
+          </Button>
+          <Button theme="blue">
+            ...child?
+          </Button>
+        </p>
       </header>
     </div>
   );
