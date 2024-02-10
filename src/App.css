@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #FFFDD0;
+  background-color: #dab3ef;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,7 @@
 p.bubble {
 	position: relative;
 	width: 500px;
+  left: 20%;
 	text-align: center;
 	line-height: 1.4em;
 	margin: 40px auto;
@@ -48,7 +49,7 @@ p.bubble {
 	border: 8px solid #333;
 	border-radius: 30px;
 	font-family: sans-serif;
-	padding: 20px;
+	padding: 10px;
 	font-size: 20px;
 }
 
