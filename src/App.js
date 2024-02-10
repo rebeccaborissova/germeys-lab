@@ -46,12 +46,13 @@ function App() {
           Hi, I'm Germey! Welcome to my lab!
           <br /> Are you a...
           <Button theme="pink"> 
-           ...parent/guardian?
+           parent/guardian?
           </Button>
           <Button theme="blue">
-            ...child?
+            child?
           </Button>
         </p>
+        <img src={process.env.PUBLIC_URL + '/images/germily.png'} style={{ position: 'absolute', bottom: '70px', left: '150px', width: '400px', height: '350px' }} />
       </header>
     </div>
   );
