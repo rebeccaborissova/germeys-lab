@@ -2,6 +2,7 @@
 import './App.css';
 import React, { useState } from "react";
 import styled from "styled-components";
+import ChatBot from 'react-simple-chatbot';
 
 const theme = {
   blue: {
@@ -53,6 +54,25 @@ function App() {
           </Button>
         </p>
         <img src={process.env.PUBLIC_URL + '/images/germily.png'} style={{ position: 'absolute', bottom: '70px', left: '150px', width: '400px', height: '350px' }} />
+        <ChatBot
+          steps={[
+            {
+              id: '1',
+              message: 'What is your name?',
+              trigger: '2',
+            },
+            {
+              id: '2',
+              user: true,
+              trigger: '3',
+            },
+            {
+              id: '3',
+              message: 'Hi {previousValue}, nice to meet you!',
+              end: true,
+            },
+          ]}
+        />
       </header>
     </div>
   );
