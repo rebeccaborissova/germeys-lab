@@ -55,7 +55,7 @@ function App() {
           steps={[
             {
               id: '1',
-              message: "Hi! Welcome to Germey's Lab! \n What is your name?",
+              message: "Hi! Welcome to Germey's Lab! What is your name?",
               trigger: '2',
             },
             {
@@ -65,7 +65,7 @@ function App() {
             },
             {
               id: '3',
-              message: "Hi {previousValue}, nice to meet you! \n I heard you're feeling ill, how can I help you?",
+              message: "Hi {previousValue}, nice to meet you! I heard you're feeling ill, how can I help you?",
               trigger: '4',
             },
             {
@@ -75,7 +75,17 @@ function App() {
             },
             {
               id: '5',
-              message: "ok",
+              message: "I'm very sorry to hear that. Having a bad cough can mean many things, like that you have a cold. Would you like me to explain what a cold is?",
+              trigger: '6', 
+            }, 
+            {
+              id: '6', 
+              user: true, 
+              trigger: '7',
+            },
+            {
+              id: '7',
+              message: "When you have a cold, it's like your body's little helpers are taking a nap because some sneaky germs got inside. Your body sends out special soldiers to chase away the germs and make you feel better. Sometimes, you might sneeze or have a runny nose, but that's just your body's way of getting rid of the germs. So rest up, drink water, and soon you'll be back to playing!",
               end: true,
             }
           ]}
