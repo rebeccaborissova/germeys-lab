@@ -12,7 +12,7 @@ async function respond(prompt, age) {
   const result = await model.generateContent(request);
   const response = await result.response;
   const text = response.text();
-  console.log(text);
+  return text;
 }
 
 //respond("cheese making", "10");

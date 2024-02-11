@@ -38,27 +38,24 @@ const Button = styled.button`
   }
 `;
 
-//<img src={logo} className="App-logo" alt="logo" />
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p class="bubble speech">
-          Hi, I'm Germey! Welcome to my lab!
-          <br /> Are you a...
+/*<br /> Are you a...
           <Button theme="pink"> 
            parent/guardian?
           </Button>
           <Button theme="blue">
             child?
-          </Button>
-        </p>
-        <img src={process.env.PUBLIC_URL + '/images/germily.png'} style={{ position: 'absolute', bottom: '70px', left: '150px', width: '400px', height: '350px' }} />
-        <ChatBot
+          </Button>*/
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p class="bubble speech">
+          Welcome to Germey's Lab!
+        <header className="ChatBot"><ChatBot
           steps={[
             {
               id: '1',
-              message: 'What is your name?',
+              message: "Hi! Welcome to Germey's Lab! \n What is your name?",
               trigger: '2',
             },
             {
@@ -68,11 +65,24 @@ function App() {
             },
             {
               id: '3',
-              message: 'Hi {previousValue}, nice to meet you!',
-              end: true,
+              message: "Hi {previousValue}, nice to meet you! \n I heard you're feeling ill, how can I help you?",
+              trigger: '4',
             },
+            {
+              id: '4',
+              user: true,
+              trigger: '5',
+            },
+            {
+              id: '5',
+              message: "ok",
+              end: true,
+            }
           ]}
         />
+        </header>
+        </p>
+        <img src={process.env.PUBLIC_URL + '/images/germily.png'} style={{ position: 'absolute', bottom: '70px', left: '150px', width: '400px', height: '350px' }} />
       </header>
     </div>
   );
