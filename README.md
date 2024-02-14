@@ -1,7 +1,7 @@
 ## Germey's Lab!
 An AI-based chatbot that simplifies medical data and terminology geared towards children.
 
-Uses Google's Gemini LLM API to generate responses for the chatbot
+Uses Google's Gemini LLM API to generate responses for the chatbot(integration of the API still in progress)
 
 ## Dependencies:
 
